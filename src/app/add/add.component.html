@@ -1,0 +1,11 @@
+<div>
+    <label>Employee Name</label>
+    <input type="text" #employeename>
+</div>
+<div>
+    <label>Employee Designation</label>
+    <input type="text" #employeedesignation>
+</div>
+<div>
+    <button (click)="onAddEmployee(employeename.value, employeedesignation.value)">Add</button>
+</div>

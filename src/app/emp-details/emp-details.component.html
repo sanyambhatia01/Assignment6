@@ -1,0 +1,14 @@
+<table>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Designation</th>
+                          
+        </tr>
+        <tr  *ngFor="let employee of employees ; let id = index">
+            <td>{{id}}</td>
+            <td><button   [routerLink]="'/empdetails/'+id+'/'+employee.name+'/'+employee.designation">{{ employee.name }}</button></td>
+            <td>{{ employee.designation }}</td>
+        </tr>
+</table>
+<a routerLink=''>Home</a>
